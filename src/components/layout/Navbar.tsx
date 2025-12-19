@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "../../assets/logo.png";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
@@ -23,7 +24,7 @@ export const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
             <img
-              src="/src/assets/logo.png"
+              src={logo}
               alt="TruePath Logo"
               className="h-16 w-auto object-contain"
             />
