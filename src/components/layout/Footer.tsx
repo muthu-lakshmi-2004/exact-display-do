@@ -75,6 +75,7 @@ export const Footer = () => {
               </li>
               <li className="flex items-start gap-3 text-sm text-primary-foreground/70">
                 <MapPin size={40} className="text-primary-glow mt-0.5" />
+                {/* changes */}
                 <span>
                   Flat No.T5 - 901, Block 5, Vasavi Srinilayam Apt, L B Nagar,
                   Hyderabad Hyderabad 500074 Telangana
