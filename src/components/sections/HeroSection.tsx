@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import heroIllustration from "@/assets/hero-illustration.png";
 import { ArrowRight, Play } from "lucide-react";
 
@@ -55,14 +56,18 @@ export const HeroSection = () => {
               transition={{ delay: 0.4 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Button variant="hero" size="lg" className="group">
-                Start Your Discovery
-                <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button variant="hero-outline" size="lg" className="group">
-                <Play size={18} className="mr-1" />
-                How It Works
-              </Button>
+              <Link to="/assessments">
+                <Button variant="hero" size="lg" className="group">
+                  Start Your Discovery
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+              <Link to="/how-it-works">
+                <Button variant="hero-outline" size="lg" className="group">
+                  <Play size={18} className="mr-1" />
+                  How It Works
+                </Button>
+              </Link>
             </motion.div>
 
             {/* Trust Indicators */}

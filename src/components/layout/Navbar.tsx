@@ -9,7 +9,7 @@ const navLinks = [
   { name: "About Us", href: "/about" },
   { name: "How It Works", href: "/how-it-works" },
   { name: "Assessments", href: "/assessments" },
-  { name: "Our Vision", href: "/vision" },
+  { name: "Vision & Mission", href: "/vision" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -45,9 +45,11 @@ export const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="default" size="default">
-              Start Assessment
-            </Button>
+            <Link to="/assessments">
+              <Button variant="default" size="default">
+                Start Assessment
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -81,9 +83,11 @@ export const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <Button variant="default" className="mt-2">
-                Start Assessment
-              </Button>
+              <Link to="/assessments" onClick={() => setIsOpen(false)}>
+                <Button variant="default" className="mt-2 w-full">
+                  Start Assessment
+                </Button>
+              </Link>
             </div>
           </motion.div>
         )}
