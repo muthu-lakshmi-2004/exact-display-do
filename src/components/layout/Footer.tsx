@@ -10,14 +10,17 @@ export const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">T</span>
+                <span className="text-primary-foreground font-bold text-lg">
+                  T
+                </span>
               </div>
               <span className="font-bold text-xl">
                 TruePath<span className="text-primary-glow">Tech</span>
               </span>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
-              Empowering students to discover their true career path through science-backed assessments.
+              Empowering students to discover their true career path through
+              science-backed assessments.
             </p>
           </div>
 
@@ -50,7 +53,9 @@ export const Footer = () => {
             <ul className="space-y-2">
               {["Students", "Parents", "Schools", "Counselors"].map((item) => (
                 <li key={item}>
-                  <span className="text-primary-foreground/70 text-sm">{item}</span>
+                  <span className="text-primary-foreground/70 text-sm">
+                    {item}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -62,15 +67,18 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-sm text-primary-foreground/70">
                 <Mail size={16} className="text-primary-glow" />
-                <span>hello@truepathtech.com</span>
+                <span>truepathtech@gmail.com</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-primary-foreground/70">
                 <Phone size={16} className="text-primary-glow" />
-                <span>+91 98765 43210</span>
+                <span>+91 8978988498</span>
               </li>
               <li className="flex items-start gap-3 text-sm text-primary-foreground/70">
-                <MapPin size={16} className="text-primary-glow mt-0.5" />
-                <span>Rupa Tech Innovations,<br />Bangalore, India</span>
+                <MapPin size={40} className="text-primary-glow mt-0.5" />
+                <span>
+                  Flat No.T5 - 901, Block 5, Vasavi Srinilayam Apt, L B Nagar,
+                  Hyderabad Hyderabad 500074 Telangana
+                </span>
               </li>
             </ul>
           </div>
@@ -78,11 +86,21 @@ export const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-primary-foreground/50">
-            © 2024 TruePathTech by Rupa Tech. All rights reserved.
+            © 2024 TruePathTech by KraysInfotech. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-primary-foreground/50">
-            <Link to="/privacy" className="hover:text-primary-glow transition-colors">Privacy Policy</Link>
-            <Link to="/terms" className="hover:text-primary-glow transition-colors">Terms of Service</Link>
+            <Link
+              to="/privacy"
+              className="hover:text-primary-glow transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              to="/terms"
+              className="hover:text-primary-glow transition-colors"
+            >
+              Terms of Service
+            </Link>
           </div>
         </div>
       </div>

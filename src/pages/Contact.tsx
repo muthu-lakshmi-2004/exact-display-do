@@ -53,19 +53,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email Us",
-      value: "hello@truepathtech.com",
-      link: "mailto:hello@truepathtech.com",
+      value: "truepathtech@gmail.com",
+      link: "mailto:truepathtech@gmail.com",
     },
     {
       icon: Phone,
       label: "Call Us",
-      value: "+91 98765 43210",
-      link: "tel:+919876543210",
+      value: "+91  8978988498",
+      link: "tel:+91 8978988498",
     },
     {
       icon: MapPin,
       label: "Visit Us",
-      value: "Rupa Tech Innovations, Bangalore, India",
+      value: "Flat No.T5 - 901, Block 5, Vasavi Srinilayam Apt, L B Nagar, Hyderabad Hyderabad 500074 Telangana",
       link: null,
     },
   ];
@@ -260,8 +260,8 @@ const Contact = () => {
                 <div className="bg-gradient-to-br from-primary-light to-secondary rounded-3xl p-8 h-64 flex items-center justify-center">
                   <div className="text-center">
                     <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
-                    <p className="text-foreground font-medium">Bangalore, India</p>
-                    <p className="text-sm text-muted-foreground">Rupa Tech Innovations</p>
+                    <p className="text-foreground font-medium">Flat No.T5 - 901, Block 5,</p>
+                    <p className="text-sm text-muted-foreground"> Vasavi Srinilayam Apt, L B Nagar, <br /> Hyderabad Hyderabad 500074 Telangana</p>
                   </div>
                 </div>
 

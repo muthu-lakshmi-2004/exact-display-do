@@ -21,10 +21,13 @@ export const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">T</span>
-            </div>
+          <Link to="/" className="flex items-center gap-3">
+            <img
+              src="/src/assets/logo.png"
+              alt="TruePath Logo"
+              className="h-16 w-auto object-contain"
+            />
+
             <span className="font-bold text-xl text-foreground">
               TruePath<span className="text-primary">Tech</span>
             </span>
