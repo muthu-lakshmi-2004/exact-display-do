@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
+import logo from "../../assets/logo.png";
+
 
 export const Footer = () => {
   return (
@@ -9,10 +11,12 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">
-                  T
-                </span>
+              <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center">
+              <img
+              src={logo}
+              alt="TruePath Logo"
+              className="h-16 w-auto object-contain"
+            />
               </div>
               <span className="font-bold text-xl">
                 TruePath<span className="text-primary-glow">Tech</span>
@@ -87,7 +91,7 @@ export const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-primary-foreground/50">
-            © 2024 TruePathTech by KraysInfotech. All rights reserved.
+            © 2025 TruePathTech by Expolarity. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-primary-foreground/50">
             <Link

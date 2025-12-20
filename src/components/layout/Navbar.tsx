@@ -28,7 +28,6 @@ export const Navbar = () => {
               alt="TruePath Logo"
               className="h-16 w-auto object-contain"
             />
-
             <span className="font-bold text-xl text-foreground">
               TruePath<span className="text-primary">Tech</span>
             </span>
